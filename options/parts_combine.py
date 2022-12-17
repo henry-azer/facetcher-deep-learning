@@ -6,9 +6,8 @@ class CombineOptions():
         self.parser = argparse.ArgumentParser()
         self.initialized = False
     def initialize(self):
-        self.parser.add_argument('--name', type=str, default='Combine',
-                                 help='name of folder')
-        self.parser.add_argument('--param', type=str, default='./Params', help='models are saved here')
+        self.parser.add_argument('--name', type=str, default='Combine', help='name of folder')
+        self.parser.add_argument('--param', type=str, default='./params', help='models are saved here')
         self.parser.add_argument('--model', type=str, default='pix2pixHD', help='which model to use')
         self.parser.add_argument('--norm', type=str, default='instance',
                                  help='instance normalization or batch normalization')

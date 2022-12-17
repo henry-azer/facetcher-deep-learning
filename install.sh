@@ -19,7 +19,7 @@ pip install opencv-python==4.1.0.25
 mv ./heat/bg.jpg ./heat/.jpg
 
 # download pretrained model 
-cd ./Params
+cd ./params
 wget -O Combine.zip https://www.dropbox.com/s/5s5c4zuq6jy0cgc/Combine.zip
 unzip Combine.zip && rm Combine.zip
 wget -O AE_whole.zip https://www.dropbox.com/s/cs4895ci51h8xn3/AE_whole.zip
