@@ -12,8 +12,9 @@ jt.flags.use_cuda = 0
 #models for face/eye1/eye2/nose/mouth
 combine_model = CombineModel()
 
-print('start')
-fileRoot = './test'
+print('started')
+
+fileRoot = './test_input'
 images_path = sorted(glob.glob(fileRoot+r"/*"))
 
 params = [
@@ -42,8 +43,10 @@ for x,fileName in enumerate(images_path):
     
     combine_model.predict_shadow(mat_img)
     
-    output_file = 'ori'+ str(x) +'.jpg'
+    output_file = '/DeepFaceDrawing-Jittor/test_output/output_'+ str(x) +'.jpg'
     print('Output file:',output_file)
     cv2.imwrite(output_file,cv2.cvtColor(combine_model.generated, cv2.COLOR_BGR2RGB))
     i = i + 1
     jt.gc()
+
+print('finished')

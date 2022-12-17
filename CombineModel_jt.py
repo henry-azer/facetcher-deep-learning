@@ -49,7 +49,8 @@ class CombineModel():
                 self.model[key].initialize(self.opt)
                 self.model[key].eval()
 
-                self.mask[key] = cv2.cvtColor(cv2.imread('heat/' + key + '.jpg'), cv2.COLOR_RGB2GRAY).astype(np.float) / 255
+                mask_filename = "heat/{0}.jpg".format(key) if (key != '') else "heat/bg.jpg"
+                self.mask[key] = cv2.cvtColor(cv2.imread(mask_filename), cv2.COLOR_RGB2GRAY).astype(np.float) / 255
                 self.mask[key] = np.expand_dims(self.mask[key], axis=2)
                 # print(key,'mask',self.mask[key].shape, self.mask[key].min())
 
