@@ -1,3 +1,3 @@
-# Facetcher Machine Learning
+# Facetcher Deep Learning
 
-Facetcher machine learning application.
+Facetcher deep learning application.
