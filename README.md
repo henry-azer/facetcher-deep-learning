@@ -1,1 +1,3 @@
-# deep-face-drawing
+# Facetcher Machine Learning
+
+Facetcher machine learning application.
