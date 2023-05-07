@@ -67,7 +67,7 @@ python3.7 demo.py
 │    └── parts_combine.py  
 |
 |
-├──  Params
+├──  params
 │    └── AE_whole 
 |    └── Combine
 │
