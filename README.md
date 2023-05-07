@@ -53,29 +53,29 @@ python3.7 demo.py
 # Project Details
 
 ```
-├──  heat   - this foler cointains the face structure images
+├──  heat - this foler cointains the face structure images
 │    
 │
-├──  configs  - This folder contains autoencoder model, facial part codes and the main Functions.
+├──  configs - This folder contains autoencoder model, facial part codes and the main Functions.
 │    └── AE_Model.py
 |    └── Combine_Model.py
 |    └── networks.py 
 │    
 │
-├──  options 
+├──  options - This folder contains configuration files for the model.
 │    └── AE_face.py 
 │    └── parts_combine.py  
 |
 |
-├──  params
+├──  params - This folder contains saved model parameters obtained by training a the model.
 │    └── AE_whole 
 |    └── Combine
 │
 │
-├──  test_input     - This folder contains the input images of the model
+├──  test_input - This folder contains the input images of the model.
 │
 │
-├──  test_output     - This folder contains the output images of the model
+├──  test_output - This folder contains the output images of the model.
 ```
 
 # Project Structure
