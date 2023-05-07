@@ -1,4 +1,4 @@
-# DeepFaceDrawing: Deep Generation of Face Images from Sketches
+# Sketch To Image
 
 ![teaser](https://user-images.githubusercontent.com/102770811/236662164-b0f79cfa-a4d3-4bd4-b037-6a4f6d31589d.jpg)
 
@@ -7,7 +7,7 @@
 An AI model that uses deep learning techniques to generate high-quality face images from freehand sketches. The model is trained on a large dataset of sketch-image pairs, which enables it to learn how to convert rough sketches into realistic face images. The system employs a multi-stage synthesis pipeline that gradually adds more details and textures to the generated images. This pipeline consists of multiple stages that refine the image at increasing levels of detail, resulting in a final output that closely matches the input sketch.
 To ensure that the generated images are of high quality, It uses a perceptual loss function that encourages the generated images to match the features of real face images. This function is based on a deep neural network that is trained to recognize human faces, and it helps the system produce images that are visually appealing and realistic. Additionally, it uses a smoothness constraint that promotes smooth transitions between neighboring pixels, which helps to eliminate artifacts and other visual imperfections in the generated images.
 
-# Installations
+# Installation
 
 1.System
 - Ubuntu 16.04 or later
@@ -35,10 +35,48 @@ sh install.sh
 
 # How to use
 
-Drawing sketch using DeepFaceDrawing GUI. Please download the pre-trained model [Baidu(Password:wiu9)](https://pan.baidu.com/s/1f1S9t4T5X5J0CDZ7AqTfMg) or [Google Drive](https://drive.google.com/drive/folders/15I41zrFr_srq03YnijLSEsy5byGOLsyZ), then put those under 'Param'.
+To use the sketch to image interface, you will need to download a pre-trained model and place it in the correct directory. Follow these steps:
+
+- Download the pre-trained model from either [Baidu](https://pan.baidu.com/s/1f1S9t4T5X5J0CDZ7AqTfMg) or [Google Drive](https://drive.google.com/drive/folders/15I41zrFr_srq03YnijLSEsy5byGOLsyZ). If you downloaded from Baidu, the password to access the file is "wiu9".
+
+- Extract the downloaded file and locate the model file. The file should have an extension of .pt.
+
+- Create a directory called "Param" in the root directory of the project.
+
+- Place the downloaded model file into the "Param" directory.
 
 ```
 python3.7 demo.py
+```
+
+# Project Details
+
+```
+├──  heat   - this foler cointains the face structure images
+│    
+│
+├──  configs  
+│    └── AE_Model.py    - This model contains an autoencoder model for generating images from sketches. 
+|    └── Combine_Model.py   - This model for generating face images from sketches and facial part codes.
+|    └── networks.py    - This file contains the main Functions
+│    
+│
+├──  options 
+│    └── AE_face.py 
+│    └── parts_combine.py  
+|
+|
+├──  Params
+│    └── AE_whole 
+|    └── Combine
+│
+│
+├──  test_input     - This folder contains the input images of the model
+│
+│
+├── test_output     - This folder contains the output images of the model
+|
+|
 ```
 
 # Project Structure
