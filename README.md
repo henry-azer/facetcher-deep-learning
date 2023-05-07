@@ -42,9 +42,9 @@ To use the sketch to image interface, you will need to download a pre-trained mo
 
 - Extract the downloaded file and locate the model file. The file should have an extension of .pt.
 
-- Create a directory called "Param" in the root directory of the project.
+- Create a directory called "param" in the root directory of the project.
 
-- Place the downloaded model file into the "Param" directory.
+- Place the downloaded model file into the "param" directory.
 
 ```
 python3.7 demo.py
