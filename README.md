@@ -1,4 +1,5 @@
-# Sketch To Image
+# Sketch To Face
+Turn your sketches into realistic portraits
 
 ![teaser](https://user-images.githubusercontent.com/102770811/236662164-b0f79cfa-a4d3-4bd4-b037-6a4f6d31589d.jpg)
 
@@ -74,9 +75,8 @@ python3.7 demo.py
 ├──  test_input     - This folder contains the input images of the model
 │
 │
-├── test_output     - This folder contains the output images of the model
-|
-|
+└──  test_output     - This folder contains the output images of the model
+
 ```
 
 # Project Structure
