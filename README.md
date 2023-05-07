@@ -53,7 +53,7 @@ python3.7 demo.py
 # Project Details
 
 ```
-├──  heat - this foler cointains the face structure images
+├──  heat - This folder cointains the face structure images.
 │    
 │
 ├──  configs - This folder contains autoencoder model, facial part codes and the main Functions.
