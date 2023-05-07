@@ -101,8 +101,6 @@ Henry Azer made a valuable contribution to the project by cleaning up the origin
 
 # Citation
 
-If you found this code useful please cite our work as:
-
 ```
 @article{chenDeepFaceDrawing2020,
     author = {Chen, Shu-Yu and Su, Wanchao and Gao, Lin and Xia, Shihong and Fu, Hongbo},
