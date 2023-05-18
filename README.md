@@ -94,10 +94,6 @@ A deep neural network architecture that consists of multiple layers. The model t
 
 - Smoothness Constraint: The final component of the network is a smoothness constraint, which is used to promote smooth transitions between neighboring pixels in the generated image. This constraint helps to eliminate artifacts and other visual imperfections in the output.
 
-# Contribution
-
-Henry Azer made a valuable contribution to the project by cleaning up the original code and fixing some issues. By doing so, Henry likely improved the readability, maintainability, and overall quality of the codebase. This type of contribution can be particularly valuable in large or complex projects, where code can become difficult to read and understand over time.
-
 # Citation
 
 ```
@@ -111,3 +107,9 @@ Henry Azer made a valuable contribution to the project by cleaning up the origin
     number = 4
 }
 ```
+
+# Contribution
+
+Henry Azer made a valuable contribution to the project by cleaning up the original code and fixing some issues. By doing so, Henry likely improved the readability, maintainability, and overall quality of the codebase. This type of contribution can be particularly valuable in large or complex projects, where code can become difficult to read and understand over time.
+
+Written by [@Alber Ashraf](https://github.com/Alber-Ashraf)
